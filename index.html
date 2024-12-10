@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>"Tech-Toon Trivia: Your Favorite Cartoons with a Twist!"</h1>
+
+  <div id="quiz-container">
+    <!-- Cartoon Cards -->
+    <div class="card" data-question="What is the output of 3 + '7' in JavaScript?" data-answer="37">
+      <img src="cartoon1.jpg" alt="Cartoon 1">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What keyword is used to declare a constant in JavaScript?" data-answer="const">
+      <img src="cartoon2.jpg" alt="Cartoon 2">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the size of int in Java?" data-answer="4 bytes">
+      <img src="cartoon3.jpg" alt="Cartoon 3">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the method to convert a string to an integer in Java?" data-answer="Integer.parseInt()">
+      <img src="cartoon4.jpg" alt="Cartoon 4">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the default value of a boolean in Java?" data-answer="false">
+      <img src="cartoon5.jpg" alt="Cartoon 5">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the keyword to inherit a class in Java?" data-answer="extends">
+      <img src="cartoon6.jpg" alt="Cartoon 6">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What method is used to add an element to an array in JavaScript?" data-answer="push()">
+      <img src="cartoon7.jpg" alt="Cartoon 7">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="Which function is used to print in Java?" data-answer="System.out.println()">
+      <img src="cartoon8.jpg" alt="Cartoon 8">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the use of 'this' keyword in Java?" data-answer="Refers to current object">
+      <img src="cartoon9.jpg" alt="Cartoon 9">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the output of null == undefined in JavaScript?" data-answer="true">
+      <img src="cartoon10.jpg" alt="Cartoon 10">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="Which loop is guaranteed to run at least once in Java?" data-answer="do-while">
+      <img src="cartoon11.jpg" alt="Cartoon 11">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the function to parse a float in JavaScript?" data-answer="parseFloat()">
+      <img src="cartoon12.jpg" alt="Cartoon 12">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="Which operator is used to compare values and types in JavaScript?" data-answer="===">
+      <img src="cartoon13.jpg" alt="Cartoon 13">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the keyword to create a new thread in Java?" data-answer="new Thread()">
+      <img src="cartoon14.jpg" alt="Cartoon 14">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What does NaN stand for in JavaScript?" data-answer="Not a Number">
+      <img src="cartoon15.jpg" alt="Cartoon 15">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the method to join two arrays in JavaScript?" data-answer="concat()">
+      <img src="cartoon16.jpg" alt="Cartoon 16">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the super class for all classes in Java?" data-answer="Object">
+      <img src="cartoon17.jpg" alt="Cartoon 17">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the output of '5' - 3 in JavaScript?" data-answer="2">
+      <img src="cartoon18.jpg" alt="Cartoon 18">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the syntax for a JavaScript arrow function?" data-answer="() => {}">
+      <img src="cartoon19.jpg" alt="Cartoon 19">
+      <div class="status-icon hidden"></div>
+    </div>
+    <div class="card" data-question="What is the default value of an uninitialized int in Java?" data-answer="0">
+      <img src="cartoon20.jpg" alt="Cartoon 20">
+      <div class="status-icon hidden"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="question-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-question"></h2>
+      <input type="text" id="modal-answer" placeholder="Your answer here">
+      <button id="modal-check-answer">Check Answer</button>
+      <p id="modal-feedback"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
